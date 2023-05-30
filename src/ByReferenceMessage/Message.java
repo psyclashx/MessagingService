@@ -1,0 +1,35 @@
+package ByReferenceMessage;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Message implements MessageIF {
+
+    private String messageContent = "";
+    private Date datum;
+
+    Message() {
+
+    }
+
+    public String getMessageContent() {
+        return messageContent;
+    }
+    public void setMessageContent(String messageContent) {
+        this.messageContent = messageContent;
+    }
+    public Date getDatum() {
+        return datum;
+    }
+    public void setDatum(Date date) {
+        this.datum = date;
+    }
+
+    @Override
+    public String toString() {
+        return "ByValue.Message{" +
+                "messageContent='" + messageContent + '\'' +
+                ", datum=" + datum +
+                '}';
+    }
+}
